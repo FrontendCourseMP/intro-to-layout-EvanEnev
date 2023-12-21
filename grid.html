@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Grid</title>
+    <link rel="stylesheet" href="input.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="grid.css"/>
+</head>
+<body>
+<header
+        class="flex w-full items-center justify-between px-4 pt-4  lg:px-[4rem]  lg:pt-6">
+    <div class="flex w-fit">
+        <img alt="logo" src="public/icons/logo.svg" class="inline  lg:mr-6"/>
+        <p class="hidden text-[0.6rem] text-dimmed  lg:block">
+            Аналитика и оцифровка продаж <br/>
+            <span class="font-bold text-purple">Wildberries</span> и
+            <span class="font-bold text-accent">Ozon</span>
+        </p>
+    </div>
+
+    <nav class="w-fit">
+        <ul class=" lg:hidden">
+            <li class="mr-8 inline">
+                <a href="#"
+                ><img src="public/icons/login.svg" alt="login" class="inline"
+                /></a>
+            </li>
+            <li class="inline">
+                <button>
+                    <img src="public/icons/menu.svg" alt="menu" class="inline"/>
+                </button>
+            </li>
+        </ul>
+
+        <ul class="hidden whitespace-nowrap text-sm  lg:block">
+            <li class="mr-6 inline">
+                <a href="#about">О нас</a>
+            </li>
+            <li class="mr-6 inline">
+                <a href="#capabilities">Возможности</a>
+            </li>
+            <li class="inline">
+                <a href="#tariffs">Тарифы</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="hidden text-sm  lg:block">
+        <a class="btn btn-inline my-0 gap-2 font-bold text-black"
+        ><img src="public/icons/login.svg" alt="login" class="inline"/> Вход
+        </a>
+
+        <a class="btn btn-inline btn-green my-0">Зарегистрироваться</a>
+    </div>
+</header>
+
+<main>
+    <section>
+        <div class="grid-container">
+            <div id="1"></div>
+            <div id="2"></div>
+            <div id="3"></div>
+            <div id="4"></div>
+            <div id="5"></div>
+            <div id="6"></div>
+            <div id="7"></div>
+            <div id="8"></div>
+            <div id="9"></div>
+        </div>
+    </section>
+</main>
+
+<footer class="mt-8 bg-secondary px-4 pb-16 pt-4 lg:px-[4rem]  lg:pt-12">
+    <div class="lg:flex">
+        <div class="h-full">
+            <img src="public/icons/logo.svg" alt="logo" class="mb-4"/>
+            <p class="text-dimmed">
+                Аналитика и оцифровка продаж
+                <span class="text-purple font-bold">Wildberries</span> и
+                <span class="text-accent font-bold">Ozon</span>
+            </p>
+
+            <div class="my-8 flex items-center gap-2">
+                <a href="#"><img src="public/icons/vk.svg" alt="vk"/></a>
+                <a href="#"><img src="public/icons/telegram.svg" alt="telegram"/></a>
+                <a href="#"><img src="public/icons/youtube.svg" alt="youtube"/></a>
+            </div>
+
+            <p class="hidden lg:block mb-6 mt-10 text-dimmed">© 2022–2023 Mpassistant</p>
+            <p class="hidden lg:block mb-6 text-dimmed">
+                Информация, размещённая на сайте, не является публичной офертой
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-x-5 gap-y-10  lg:grid-cols-4 ">
+            <div class="flex flex-col gap-6">
+                <h3 class="font-bold">Сервис</h3>
+                <a href="#" class="text-dimmed">Для кого</a>
+                <a href="#" class="text-dimmed">Возможности</a>
+                <a href="#" class="text-dimmed">Тарифы</a>
+            </div>
+
+            <div class="flex flex-col gap-6">
+                <h3 class="font-bold">Клиентам</h3>
+                <a href="#" class="text-dimmed">Вход</a>
+                <a href="#" class="text-dimmed">Регистрация</a>
+                <a href="#" class="text-dimmed">Восстановление пароля</a>
+            </div>
+
+            <div class="flex flex-col gap-6">
+                <h3 class="font-bold">Документы</h3>
+                <a href="#" class="text-dimmed">Пользовательское соглашение</a>
+                <a href="#" class="text-dimmed">Политика конфидециальности</a>
+                <a href="#" class="text-dimmed">Публичная оферта</a>
+                <a href="#" class="text-dimmed">Использование cookie</a>
+                <a href="#" class="text-dimmed">Техническая поддержка</a>
+            </div>
+
+            <div class="flex flex-col gap-6">
+                <h3 class="font-bold">Ссылки</h3>
+                <a href="grid.html" class="text-dimmed">Grid</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="lg:ml-auto lg:w-fit w-1/2 mt-8">
+        <img
+                src="public/icons/modulbank.svg"
+                alt="модуль банк"
+                class="inline-block"/>
+        <img src="public/icons/visa.svg" alt="visa" class="inline-block"/>
+        <img
+                src="public/icons/mastercard.svg"
+                alt="mastercard"
+                class="inline-block"/>
+        <img src="public/icons/maestro.svg" alt="maestro" class="inline-block"/>
+        <img src="public/icons/mir.svg" alt="mir" class="inline-block"/>
+
+        <p class="text-dimmed mt-8 sm:hidden lg:block">
+            Редизайн сайта
+            <a href="#" class="font-bold text-secondary">Turkuletsdesign</a>
+        </p>
+    </div>
+
+    <p class="mb-6 mt-10 text-dimmed lg:hidden">© 2022–2023 Mpassistant</p>
+    <p class="mb-6 text-dimmed lg:hidden">
+        Информация, размещённая на сайте, не является публичной офертой
+    </p>
+
+    <p class="text-dimmed">
+        Редизайн сайта
+        <a href="#" class="font-bold text-secondary">Turkuletsdesign</a>
+    </p>
+</footer>
+</body>
+</html>
