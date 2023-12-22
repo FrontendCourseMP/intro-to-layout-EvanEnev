@@ -1,0 +1,25 @@
+.grid-container {
+    margin-inline: auto;
+    height: 20vh;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+.grid-container > div {
+    border: black solid 1px;
+    width: 100%;
+}
+
+#1 {
+    background-color: white;
+}
+
+#2 {
+    background-color: yellow;
+}
+
+#3 {
+    grid-column: span 1;
+}
