@@ -508,13 +508,13 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.card p:first-child {
+.card h3 {
   margin-bottom: 2rem;
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-.card p:not(:first-child) {
+.card p {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
@@ -968,6 +968,14 @@ footer {
   z-index: 0;
 }
 
+.col-span-full {
+  grid-column: 1 / -1;
+}
+
+.col-end-3 {
+  grid-column-end: 3;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -1281,8 +1289,8 @@ footer {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/public\/images\/boxes\.webp\'\)\] {
-  background-image: url('/public/images/boxes.webp');
+.bg-\[url\(\'\/public\/images\/png\/boxes\.png\'\)\] {
+  background-image: url('/public/images/png/boxes.png');
 }
 
 .bg-gradient-dimmed {
@@ -1291,14 +1299,6 @@ footer {
 
 .bg-gradient-orange {
   background-image: linear-gradient(91deg, #FFF1D7 5.69%, #FFB57F 125.81%);
-}
-
-.bg-\[url\(\'\/public\/images\/webp\/boxes\.webp\'\)\] {
-  background-image: url('/public/images/webp/boxes.webp');
-}
-
-.bg-\[url\(\'\/public\/images\/png\/boxes\.png\'\)\] {
-  background-image: url('/public/images/png/boxes.png');
 }
 
 .bg-no-repeat {
@@ -1568,10 +1568,6 @@ footer {
 
   .xl\:justify-between {
     justify-content: space-between;
-  }
-
-  .xl\:gap-6 {
-    gap: 1.5rem;
   }
 
   .xl\:gap-8 {
