@@ -1,0 +1,56 @@
+fieldset {
+    border: black 1px solid;
+    border-radius: 10px;
+}
+
+fieldset > div {
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+div > input {
+    width: 100%;
+}
+
+.input-dynamic {
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+.input-dynamic:valid ~ .placeholder{
+    transform: translateY(-100%);
+    opacity: 1;
+    color: black;
+}
+
+.placeholder {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    transition: 0.2s ease transform, 0.2s ease color;
+    color: #9ca3af;
+}
+
+.logo {
+    transform: rotate(30deg) scale(1.5) skew(10deg);
+}
+
+label:has(> input:checked) {
+    color: #2A84EE;
+}
+
+dd > span {
+    margin-left: 1rem;
+}
+
+dd > span::before {
+    content: "🛈";
+}
+
+dd:has(> input:checked) span {
+    text-decoration: line-through;
+}
+
+dd:nth-child(even) {
+    color: #2EB896;
+}
