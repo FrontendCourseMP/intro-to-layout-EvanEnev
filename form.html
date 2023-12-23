@@ -12,7 +12,7 @@
 <header class="flex w-full items-center justify-between px-8 pt-8 xl:px-16 xl:pt-6">
     <div class="flex w-fit">
         <img alt="logo" src="public/icons/logo.svg" class="inline xl:mr-6"/>
-        <p class="hidden text-dimmed text-sm xl:block">
+        <p class="hilien text-dimmed text-sm xl:block">
             Аналитика и оцифровка продаж
             <span class="text-purple">Wildberries</span> и
             <span class="text-accent">Ozon</span>
@@ -20,7 +20,7 @@
     </div>
 
     <nav class="w-fit">
-        <ul class="xl:hidden">
+        <ul class="xl:hilien">
             <li class="mr-8 inline">
                 <span class="sr-only">Вход</span>
                 <a href="#"><img src="public/icons/login.svg" alt="login" class="inline"/></a>
@@ -33,7 +33,7 @@
             </li>
         </ul>
 
-        <ul class="hidden whitespace-nowrap text-sm xl:block">
+        <ul class="hilien whitespace-nowrap text-sm xl:block">
             <li class="mr-6 inline">
                 <a href="#" class="link">О нас</a>
             </li>
@@ -46,7 +46,7 @@
         </ul>
     </nav>
 
-    <div class="hidden text-sm xl:block">
+    <div class="hilien text-sm xl:block">
         <a class="btn btn-inline my-0 gap-2 font-bold text-black link"><img src="public/icons/login.svg" alt="login"/>
             Вход </a>
 
@@ -63,18 +63,20 @@
                     <fieldset class="mb-6">
                         <legend class="mb-4">Личная информация</legend>
                         <div class="relative">
-                            <input required class="input-dynamic">
-                            <span class="placeholder">Имя</span>
+                            <label>
+                                <input required class="input-dynamic">
+                                <span class="placeholder">Имя</span>
+                            </label>
                         </div>
 
                         <div class="relative">
                             <p class="mb-2">Пол</p>
                             <div class="flex gap-4">
-                                <label>
+                                <label class="check">
                                     Мужской
                                     <input required type="radio" name="sex">
                                 </label>
-                                <label>
+                                <label class="check">
                                     Женский
                                     <input required type="radio" name="sex">
                                 </label>
@@ -82,39 +84,46 @@
                         </div>
 
                         <div class="relative">
-                            <input required class="input-dynamic" type="password">
-                            <span class="placeholder">Пароль</span>
+                            <label>
+                                <input required class="input-dynamic" type="password">
+                                <span class="placeholder">Пароль</span>
+                            </label>
                         </div>
                     </fieldset>
 
                     <fieldset>
                         <legend class="mb-4">Контактные данные</legend>
                         <div class="relative">
-                            <input class="input-dynamic"
-                                   pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-                                   required>
-                            <span class="placeholder">Email</span>
+                            <label>
+                                <input class="input-dynamic"
+                                       pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                                       required>
+                                <span class="placeholder">Email</span>
+                            </label>
+
                         </div>
                         <div class="relative">
-                            <input class="input-dynamic" type="tel" required>
-                            <span class="placeholder">Телефон</span>
+                            <label>
+                                <input class="input-dynamic" type="tel" required>
+                                <span class="placeholder">Телефон</span>
+                            </label>
                         </div>
                         <div class="relative">
                             <p>Удобный интервал для связи</p>
                             <div class="grid grid-cols-2">
-                                <label class="w-full transition-colors text-center">
+                                <label class="w-full transition-colors text-center check">
                                     Утро
                                     <input type="checkbox">
                                 </label>
-                                <label class="w-full transition-colors text-center">
+                                <label class="w-full transition-colors text-center check">
                                     День
                                     <input type="checkbox">
                                 </label>
-                                <label class="w-full transition-colors text-center">
+                                <label class="w-full transition-colors text-center check">
                                     Вечер
                                     <input type="checkbox">
                                 </label>
-                                <label class="w-full transition-colors text-center">
+                                <label class="w-full transition-colors text-center check">
                                     Ночь
                                     <input type="checkbox">
                                 </label>
@@ -131,59 +140,72 @@
     </section>
 
     <section>
-        <dl class="mx-auto w-fit">
-            <dt>Псевдо-классы</dt>
-            <dd><input type="checkbox"><span>:active</span></dd>
-            <dd><input type="checkbox"><span>:any (en-US)</span></dd>
-            <dd><input type="checkbox"><span>:any-link</span></dd>
-            <dd><input type="checkbox" checked><span>:checked</span></dd>
-            <dd><input type="checkbox"><span>:default</span></dd>
-            <dd><input type="checkbox"><span>:defined</span></dd>
-            <dd><input type="checkbox"><span>:dir()</span></dd>
-            <dd><input type="checkbox"><span>:disabled</span></dd>
-            <dd><input type="checkbox"><span>:empty</span></dd>
-            <dd><input type="checkbox"><span>:enabled</span></dd>
-            <dd><input type="checkbox"><span>:first</span></dd>
-            <dd><input type="checkbox" checked><span>:first-child</span></dd>
-            <dd><input type="checkbox"><span>:first-of-type</span></dd>
-            <dd><input type="checkbox"><span>:fullscreen</span></dd>
-            <dd><input type="checkbox" checked><span>:focus</span></dd>
-            <dd><input type="checkbox" checked><span>:hover</span></dd>
-            <dd><input type="checkbox"><span>:indeterminate</span></dd>
-            <dd><input type="checkbox"><span>:in-range</span></dd>
-            <dd><input type="checkbox"><span>:invalid</span></dd>
-            <dd><input type="checkbox"><span>:lang()</span></dd>
-            <dd><input type="checkbox"><span>:last-child</span></dd>
-            <dd><input type="checkbox"><span>:last-of-type</span></dd>
-            <dd><input type="checkbox"><span>:left</span></dd>
-            <dd><input type="checkbox"><span>:link</span></dd>
-            <dd><input type="checkbox" checked><span>:not()</span></dd>
-            <dd><input type="checkbox"><span>:nth-child()</span></dd>
-            <dd><input type="checkbox"><span>:nth-last-child()</span></dd>
-            <dd><input type="checkbox"><span>:nth-last-of-type()</span></dd>
-            <dd><input type="checkbox"><span>:nth-of-type()</span></dd>
-            <dd><input type="checkbox"><span>:only-child</span></dd>
-            <dd><input type="checkbox"><span>:only-of-type</span></dd>
-            <dd><input type="checkbox"><span>:optional</span></dd>
-            <dd><input type="checkbox"><span>:out-of-range</span></dd>
-            <dd><input type="checkbox"><span>:read-only</span></dd>
-            <dd><input type="checkbox"><span>:read-write</span></dd>
-            <dd><input type="checkbox"><span>:required</span></dd>
-            <dd><input type="checkbox"><span>:right</span></dd>
-            <dd><input type="checkbox" checked><span>:root</span></dd>
-            <dd><input type="checkbox"><span>:scope (en-US)</span></dd>
-            <dd><input type="checkbox"><span>:target</span></dd>
-            <dd><input type="checkbox" checked><span>:valid</span></dd>
-            <dd><input type="checkbox"><span>:visited</span></dd>
-
-            <dt>Псевдо-элементы</dt>
-            <dd><input type="checkbox"><span>::after</span></dd>
-            <dd><input type="checkbox" checked><span>::before</span></dd>
-            <dd><input type="checkbox"><span>::cue</span></dd>
-            <dd><input type="checkbox"><span>::first-letter</span></dd>
-            <dd><input type="checkbox"><span>::first-line</span></dd>
-            <dd><input type="checkbox"><span>::slotted</span></dd>
-        </dl>
+        <ul class="flex justify-center gap-12">
+            <li>
+                <dl class="mx-auto w-fit mb-4">
+                    <dt class="first-letter:text-accent first-letter:font-bold mb-2">Псевдо-классы</dt>
+                    <dd>Бла-бла-бла-бла</dd>
+                </dl>
+                <ul class="pseudo-list">
+                    <li><label><input type="checkbox"><span>:active</span></label></li>
+                    <li><label><input type="checkbox"><span>:any (en-US)</span></label></li>
+                    <li><label><input type="checkbox"><span>:any-link</span></label></li>
+                    <li><label><input type="checkbox" checked><span>:checked</span></label></li>
+                    <li><label><input type="checkbox"><span>:default</span></label></li>
+                    <li><label><input type="checkbox"><span>:defined</span></label></li>
+                    <li><label><input type="checkbox"><span>:dir()</span></label></li>
+                    <li><label><input type="checkbox"><span>:disabled</span></label></li>
+                    <li><label><input type="checkbox"><span>:empty</span></label></li>
+                    <li><label><input type="checkbox"><span>:enabled</span></label></li>
+                    <li><label><input type="checkbox"><span>:first</span></label></li>
+                    <li><label><input type="checkbox" checked><span>:first-child</span></label></li>
+                    <li><label><input type="checkbox"><span>:first-of-type</span></label></li>
+                    <li><label><input type="checkbox"><span>:fullscreen</span></label></li>
+                    <li><label><input type="checkbox" checked><span>:focus</span></label></li>
+                    <li><label><input type="checkbox" checked><span>:hover</span></label></li>
+                    <li><label><input type="checkbox"><span>:indeterminate</span></label></li>
+                    <li><label><input type="checkbox"><span>:in-range</span></label></li>
+                    <li><label><input type="checkbox"><span>:invalid</span></label></li>
+                    <li><label><input type="checkbox"><span>:lang()</span></label></li>
+                    <li><label><input type="checkbox"><span>:last-child</span></label></li>
+                    <li><label><input type="checkbox"><span>:last-of-type</span></label></li>
+                    <li><label><input type="checkbox"><span>:left</span></label></li>
+                    <li><label><input type="checkbox"><span>:link</span></label></li>
+                    <li><label><input type="checkbox" checked><span>:not()</span></label></li>
+                    <li><label><input type="checkbox"><span>:nth-child()</span></label></li>
+                    <li><label><input type="checkbox"><span>:nth-last-child()</span></label></li>
+                    <li><label><input type="checkbox"><span>:nth-last-of-type()</span></label></li>
+                    <li><label><input type="checkbox"><span>:nth-of-type()</span></label></li>
+                    <li><label><input type="checkbox"><span>:only-child</span></label></li>
+                    <li><label><input type="checkbox"><span>:only-of-type</span></label></li>
+                    <li><label><input type="checkbox"><span>:optional</span></label></li>
+                    <li><label><input type="checkbox"><span>:out-of-range</span></label></li>
+                    <li><label><input type="checkbox"><span>:read-only</span></label></li>
+                    <li><label><input type="checkbox"><span>:read-write</span></label></li>
+                    <li><label><input type="checkbox"><span>:required</span></label></li>
+                    <li><label><input type="checkbox"><span>:right</span></label></li>
+                    <li><label><input type="checkbox" checked><span>:root</span></label></li>
+                    <li><label><input type="checkbox"><span>:scope (en-US)</span></label></li>
+                    <li><label><input type="checkbox"><span>:target</span></label></li>
+                    <li><label><input type="checkbox" checked><span>:valid</span></label></li>
+                    <li><label><input type="checkbox"><span>:visited</span></label></li>
+                </ul>
+            </li>
+            <li>
+                <dl class="mx-auto w-fit mb-4">
+                    <dt class="first-letter:text-accent first-letter:font-bold mb-2">Псевдо-элементы</dt>
+                    <dd>Бла-бла-бла-бла</dd>
+                </dl>
+                <ul class="pseudo-list">
+                    <li><label><input type="checkbox"><span>::after</span></label></li>
+                    <li><label><input type="checkbox" checked><span>::before</span></label></li>
+                    <li><label><input type="checkbox"><span>::cue</span></label></li>
+                    <li><label><input type="checkbox"><span>::first-letter</span></label></li>
+                    <li><label><input type="checkbox"><span>::first-line</span></label></li>
+                    <li><label><input type="checkbox"><span>::slotted</span></label></li>
+                </ul>
+            </li>
+        </ul>
     </section>
 </main>
 
@@ -203,8 +225,8 @@
                 <a href="#"><img src="public/icons/youtube.svg" alt="youtube"/></a>
             </div>
 
-            <p class="hidden xl:block mb-6 mt-10 text-dimmed">© 2022–2023 Mpassistant</p>
-            <p class="hidden xl:block mb-6 text-dimmed">
+            <p class="hilien xl:block mb-6 mt-10 text-dimmed">© 2022–2023 Mpassistant</p>
+            <p class="hilien xl:block mb-6 text-dimmed">
                 Информация, размещённая на сайте, не является публичной офертой
             </p>
         </div>
@@ -249,18 +271,18 @@
         <img src="public/icons/maestro.svg" alt="maestro" class="inline-block"/>
         <img src="public/icons/mir.svg" alt="mir" class="inline-block"/>
 
-        <p class="text-dimmed mt-8 hidden xl:block">
+        <p class="text-dimmed mt-8 hilien xl:block">
             Редизайн сайта
             <a href="#" class="font-bold text-secondary">Turkuletsdesign</a>
         </p>
     </div>
 
-    <p class="mb-6 mt-10 text-dimmed xl:hidden">© 2022–2023 Mpassistant</p>
-    <p class="mb-6 text-dimmed xl:hidden">
+    <p class="mb-6 mt-10 text-dimmed xl:hilien">© 2022–2023 Mpassistant</p>
+    <p class="mb-6 text-dimmed xl:hilien">
         Информация, размещённая на сайте, не является публичной офертой
     </p>
 
-    <p class="text-dimmed xl:hidden">
+    <p class="text-dimmed xl:hilien">
         Редизайн сайта
         <a href="#" class="font-bold text-secondary">Turkuletsdesign</a>
     </p>

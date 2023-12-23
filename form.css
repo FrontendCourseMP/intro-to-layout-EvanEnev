@@ -17,7 +17,7 @@ div > input {
     border-radius: 5px;
 }
 
-.input-dynamic:valid ~ .placeholder{
+.input-dynamic:valid ~ .placeholder {
     transform: translateY(-100%);
     opacity: 1;
     color: black;
@@ -35,7 +35,7 @@ div > input {
     transform: rotate(30deg) scale(1.5) skew(10deg);
 }
 
-label:has(> input:checked) {
+.check:has(> input:checked) {
     color: #2A84EE;
 }
 
@@ -43,7 +43,7 @@ dd > span {
     margin-left: 1rem;
 }
 
-dd > span::before {
+dd::before {
     content: "🛈";
 }
 
@@ -51,6 +51,15 @@ dd:has(> input:checked) span {
     text-decoration: line-through;
 }
 
-dd:nth-child(even) {
+.pseudo-list > li > label > span {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.pseudo-list > li:nth-child(even) {
     color: #2EB896;
+}
+
+.pseudo-list > li > label:has(> input:checked) span {
+    text-decoration: line-through;
 }

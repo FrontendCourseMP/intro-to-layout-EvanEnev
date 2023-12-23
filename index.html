@@ -1,79 +1,376 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>Mpassistant</title>
-    <link rel="stylesheet" href="input.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="input.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="./normalize.css"/>
 </head>
 
 <body>
-<header class="flex w-full items-center justify-between px-8 pt-8 xl:px-16 xl:pt-6">
-    <div class="flex w-fit">
-        <img alt="logo" src="public/icons/logo.svg" class="inline xl:mr-6" />
-        <p class="hidden text-dimmed text-sm xl:block">
-            Аналитика и оцифровка продаж
-            <span class="text-purple">Wildberries</span> и
-            <span class="text-accent">Ozon</span>
-        </p>
-    </div>
+<header>
+    <div class="wrapper">
+        <div class="flex items-center justify-between px-8 pt-8 xl:px-16 xl:pt-6">
+            <div class="flex w-fit">
+                <img alt="logo" src="public/icons/logo.svg" class="inline xl:mr-6"/>
+                <p class="hidden text-dimmed text-sm xl:block">
+                    Аналитика и оцифровка продаж
+                    <span class="text-purple">Wildberries</span> и
+                    <span class="text-accent">Ozon</span>
+                </p>
+            </div>
 
-    <nav class="w-fit">
-        <ul class="xl:hidden">
-            <li class="mr-8 inline">
-                <span class="sr-only">Вход</span>
-                <a href="#"><img src="public/icons/login.svg" alt="login" class="inline" /></a>
-            </li>
-            <li class="inline">
-                <button>
-                    <span class="sr-only">Меню</span>
-                    <img src="public/icons/menu.svg" alt="menu" class="inline" />
-                </button>
-            </li>
-        </ul>
+            <nav class="w-fit">
+                <ul class="xl:hidden">
+                    <li class="mr-8 inline">
+                        <span class="sr-only">Вход</span>
+                        <a href="#"><img src="public/icons/login.svg" alt="login" class="inline"/></a>
+                    </li>
+                    <li class="inline">
+                        <button>
+                            <span class="sr-only">Меню</span>
+                            <img src="public/icons/menu.svg" alt="menu" class="inline"/>
+                        </button>
+                    </li>
+                </ul>
 
-        <ul class="hidden whitespace-nowrap text-sm xl:block">
-            <li class="mr-6 inline">
-                <a href="#about" class="link">О нас</a>
-            </li>
-            <li class="mr-6 inline">
-                <a href="#capabilities" class="link">Возможности</a>
-            </li>
-            <li class="inline">
-                <a href="#tariffs" class="link">Тарифы</a>
-            </li>
-        </ul>
-    </nav>
+                <ul class="hidden whitespace-nowrap text-sm xl:block">
+                    <li class="mr-6 inline">
+                        <a href="#about" class="link">О нас</a>
+                    </li>
+                    <li class="mr-6 inline">
+                        <a href="#capabilities" class="link">Возможности</a>
+                    </li>
+                    <li class="inline">
+                        <a href="#tariffs" class="link">Тарифы</a>
+                    </li>
+                </ul>
+            </nav>
 
-    <div class="hidden text-sm xl:block">
-        <a class="btn btn-inline my-0 gap-2 font-bold text-black link"><img src="public/icons/login.svg" alt="login" /> Вход </a>
+            <div class="hidden text-sm xl:block">
+                <a class="btn btn-inline my-0 gap-2 font-bold text-black link"><img src="public/icons/login.svg"
+                                                                                    alt="login"/> Вход </a>
 
-        <a class="btn btn-inline btn-green my-0">Зарегистрироваться</a>
+                <a class="btn btn-inline btn-green my-0">Зарегистрироваться</a>
+            </div>
+        </div>
     </div>
 </header>
 
 <main>
     <div class="p-8 xl:p-[4rem]">
         <section>
-            <div class="h-full flex">
-                <div class="xl:w-1/2 inline-block">
-                    <h2 class="font-bold text-6xl">
-                        <span class="text-secondary">Внутренняя аналитика</span> и <span class="text-accent">финансовый учёт</span> для бизнеса на маркетплейсах
-                        <img src="public/images/marketplaces-logos.webp" alt="marketplaces-logos" class="inline-block xl:h-12" />
-                    </h2>
+            <div class="wrapper">
+                <div class="h-full flex">
+                    <div class="xl:w-1/2 inline-block">
+                        <h2 class="font-bold text-6xl">
+                            <span class="text-secondary">Внутренняя аналитика</span> и <span class="text-accent">финансовый учёт</span>
+                            для бизнеса на маркетплейсах
+                            <img src="public/images/png/marketplaces-logos.png" alt="marketplaces-logos"
+                                 class="inline-block xl:h-12"/>
+                        </h2>
 
-                    <p class="mb-8 text-dimmed text-2xl">
-                        Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов
-                    </p>
+                        <p class="mb-8 text-dimmed text-2xl">
+                            Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов
+                        </p>
 
-                    <div class="card mb-8 text-2xl">
-                        <p>
-                            Начните свой 3-дневный пробный период с неограниченным доступом ко всем возможностям
+                        <div class="card mb-8 text-2xl">
+                            <p>
+                                Начните свой 3-дневный пробный период с неограниченным доступом ко всем возможностям
+                            </p>
+
+                            <label class="label flex">
+                                <input type="email" placeholder="Введите ваш email" class="input"/>
+                                <button class="btn btn-blue xl:btn-inline m-0 hidden flex-1 xl:inline-flex">
+                                    Попробовать
+                                </button>
+                            </label>
+
+                            <button class="btn btn-blue xl:hidden">Попробовать</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-blur absolute right-[10rem] hidden xl:block"></div>
+                    <div class="bg-[url('/public/images/png/boxes.png')] bg-no-repeat w-1/2 min-h-full hidden xl:block"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="wrapper">
+                <h2 class="sr-only">О нас</h2>
+                <div class="card card-secondary mb-16 flex flex-col xl:flex-row xl:justify-between xl:gap-6">
+                    <div class="w-full">
+                        <p class="text-dimmed">
+                            <span class="text-accent text-8xl xl:card-bold">700</span>
+                            Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов
+                        </p>
+                    </div>
+
+                    <div class="w-full">
+                        <p class="text-dimmed">
+                            <span class="text-8xl text-accent xl:card-bold mt-8">5</span>
+                            Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов
+                        </p>
+                    </div>
+
+                    <div class="w-full">
+                        <p class="text-dimmed">
+                            <span class="text-8xl text-accent xl:card-bold mt-8">100 000</span>
+                            Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="capabilities">
+            <div class="wrapper">
+                <h2 class="font-bold text-4xl">Возможности сервиса</h2>
+                <div class="xl:hidden mt-12">
+                    <details class="details">
+                        <summary
+                                class="flex items-center justify-between rounded-[10px] bg-secondary p-8 font-bold text-secondary">
+                            Финансовая аналитика
+                        </summary>
+                        <div class="flex flex-col gap-y-8 rounded-b-[10px] bg-details p-8">
+                            <p class="font-bold">Инструменты для финансовой аналитики</p>
+                            <ul>
+                                <li class="mb-4 text-dimmed">
+                                    Отчёт о прибылях и убытках (P&L)
+                                </li>
+                                <li class="mb-4 text-dimmed">
+                                    Отчёт о движении денежных средств (ДДС)
+                                </li>
+                                <li class="mb-4 text-dimmed">Журнал операций</li>
+                                <li class="mb-4 text-dimmed">Сводка продаж</li>
+                                <li class="text-dimmed">Учёт самовыкупов</li>
+                            </ul>
+                            <picture>
+                                <source srcset="public/images/webp/capabilities.webp" type="image/webp">
+                                <img src="public/images/png/capabilities.png" alt="отчёт" class="self-center"/>
+                            </picture>
+                            <button class="btn btn-green">Попробовать бесплатно</button>
+                        </div>
+                    </details>
+
+                    <details class="details">
+                        <summary
+                                class="flex items-center justify-between rounded-[10px] bg-secondary p-8 font-bold text-secondary">
+                            Товарная аналитика
+                        </summary>
+                    </details>
+
+                    <details class="details">
+                        <summary
+                                class="flex items-center justify-between rounded-[10px] bg-secondary p-8 font-bold text-secondary">
+                            Аналитика внутренней рекламы
+                        </summary>
+                    </details>
+
+                    <details class="details">
+                        <summary
+                                class="flex items-center justify-between rounded-[10px] bg-secondary p-8 font-bold text-secondary">
+                            Статистика
+                        </summary>
+                    </details>
+
+                    <details class="details">
+                        <summary
+                                class="flex items-center justify-between rounded-[10px] bg-secondary p-8 font-bold text-secondary">
+                            Инструменты
+                        </summary>
+                    </details>
+                </div>
+
+                <div class="shadow-radio radio-container mb-12 hidden xl:block">
+                    <div class="flex flex-nowrap">
+                        <label class="radio-label">
+                            Финансовая аналитика
+                            <input type="radio" class="radio" name="radio" value="1" checked/>
+                        </label>
+                        <label class="radio-label">
+                            Товарная аналитика
+                            <input type="radio" class="radio" name="radio" value="2"/>
+                        </label>
+                        <label class="radio-label">
+                            Аналитика внутренней рекламы
+                            <input type="radio" class="radio" name="radio" value="3"/>
+                        </label>
+                        <label class="radio-label">
+                            Статистика
+                            <input type="radio" class="radio" name="radio" value="4"/>
+                        </label>
+                        <label class="radio-label">
+                            Инструменты
+                            <input type="radio" class="radio" name="radio" value="5"/>
+                        </label>
+                    </div>
+
+                    <div class="radio-1 hidden w-full justify-between rounded-b-[10px] bg-details p-6">
+                        <div class="inline-block w-1/2">
+                            <p class="font-bold mb-5">Инструменты для финансовой аналитики</p>
+                            <ul>
+                                <li class="mb-4 text-dimmed">
+                                    Отчёт о прибылях и убытках (P&L)
+                                </li>
+                                <li class="mb-4 text-dimmed">
+                                    Отчёт о движении денежных средств (ДДС)
+                                </li>
+                                <li class="mb-4 text-dimmed">Журнал операций</li>
+                                <li class="mb-4 text-dimmed">Сводка продаж</li>
+                                <li class="text-dimmed">Учёт самовыкупов</li>
+                            </ul>
+                            <button class="btn btn-green btn-inline">
+                                Попробовать бесплатно
+                            </button>
+                        </div>
+                        <picture>
+                            <source srcset="public/images/webp/capabilities.webp" type="image/webp">
+                            <img src="public/images/png/capabilities.png" alt="отчёт" class="inline w-[40%]"/>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <h2 class="sr-only">Начните экономить своё время</h2>
+                <div class="card mb-16 pb-0 xl:pb-4 relative">
+                    <div class="xl:w-1/2 xl:inline-block">
+                        <p>Начните экономить своё время</p>
+                        <p class="mb-8">
+                            3-дневный пробный период с неограниченным доступом ко всем возможностям
+                        </p>
+                        <label class="label flex">
+                            <input type="email" placeholder="Введите ваш email" class="input"/>
+
+                            <button class="btn btn-blue xl:btn-inline m-0 hidden flex-1 xl:inline-flex">
+                                Попробовать
+                            </button>
+                        </label>
+                        <button class="xl:hidden btn btn-blue">Попробовать</button>
+                    </div>
+                    <picture>
+                        <source srcset="public/images/webp/time.webp" type="image/webp">
+                        <img src="public/images/png/time.png" alt="time"
+                             class="xl:inline xl:h-[120%] xl:absolute xl:bottom-0 xl:right-8"/>
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <div class="flex flex-col items-center xl:flex-row mb-16">
+                    <div class="mb-8 xl:mb-0 xl:mr-32">
+                        <h2>
+                            Собираем единые отчёты по всем вашим магазинам
+                        </h2>
+                        <p class="mb-8 text-dimmed text-2xl">С Mpassistant вы сможете:</p>
+                        <ul class="marker list-inside">
+                            <li class="mb-4 rounded-[10px] bg-secondary px-4 py-6 pl-14">
+                                Сможете видеть прибыль по всем магазинам и маркетплейсам в одном месте
+                            </li>
+                            <li class="mb-4 rounded-[10px] bg-secondary px-4 py-6 pl-14">
+                                Не потратите время на сбор данных из нескольких кабинетов или маркетплейсов
+                            </li>
+                            <li class="rounded-[10px] bg-secondary px-4 py-6 pl-14">
+                                Добавите любое количество магазинов
+                            </li>
+                        </ul>
+                    </div>
+                    <picture>
+                        <source srcset="public/images/webp/promo.webp" type="image/webp">
+                        <img src="public/images/png/promo.png" alt="promo" class="block xl:hidden"/>
+                    </picture>
+                    <picture>
+                        <source srcset="public/images/webp/promo_desktop.webp" type="image/webp">
+                        <img src="public/images/png/promo_desktop.png" alt="promo"
+                             class="hidden aspect-video h-1/2 w-full xl:block"/>
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <h2>Почему выбирают Mpassistant</h2>
+                <ul class="mb-16 grid grid-cols-1 gap-4 xl:grid-cols-3">
+                    <li class="rounded-[10px] bg-secondary px-8 py-12">
+                        <img src="public/icons/data.svg" alt="data" class="inline h-6"/>
+                        <h3 class="inline font-bold text-2xl">Точность данных</h3>
+                        <p class="mt-4 text-dimmed text-xl">
+                            Данные в отчётах сервиса полностью совпадает с данными ваших магазинов на маркетплейсах.
+                        </p>
+                    </li>
+
+                    <li class="rounded-[10px] bg-secondary px-8 py-12">
+                        <img src="public/icons/function.svg" alt="data" class="inline h-6"/>
+                        <h3 class="inline font-bold text-2xl">Большой функционал</h3>
+                        <p class="mt-4 text-dimmed text-xl">
+                            Полный набор инструментов для внутренней аналитики для Wildberries и Ozon. Более 10 полезных
+                            отчётов с удобными настраиваемыми фильтрами и параметрами.
+                        </p>
+                    </li>
+
+                    <li class="rounded-[10px] bg-secondary px-8 py-12">
+                        <img src="public/icons/easy.svg" alt="easy" class="inline h-6"/>
+                        <h3 class="inline font-bold text-2xl">Лёгкость освоения</h3>
+                        <p class="mt-4 text-dimmed text-xl">
+                            Наши отчёты просты и удобны. Все отчёты имеют подробные инструкции и видео, помогающие легко
+                            читать их и использовать.
+                        </p>
+                    </li>
+
+                    <li class="rounded-[10px] bg-secondary px-8 py-12">
+                        <img src="public/icons/experience.svg" alt="experience" class="inline h-6"/>
+                        <h3 class="inline font-bold text-2xl">Подходит всем</h3>
+                        <p class="mt-4 text-dimmed text-xl">
+                            Mpassistant создан селлерами для селлеров. Наш опыт в товарном бизнесе и разработке IT
+                            систем
+                            позволил создать полезный и удобный продукт, поэтому он подойдёт как для новичков, так и для
+                            опытных селлеров.
+                        </p>
+                    </li>
+
+                    <li class="rounded-[10px] bg-secondary px-8 py-12">
+                        <img src="public/icons/confidential.svg" alt="confidential" class="inline h-6"/>
+                        <h3 class="inline font-bold text-2xl">Конфиденциальность</h3>
+                        <p class="mt-4 text-dimmed text-xl">
+                            Ваша конфиденциальность для нас самый главный приоритет. Все ваши данные надёжно сохранены,
+                            а
+                            информация об этом записана в договоре-оферте. По желанию можем заключить дополнительное
+                            соглашение (NDA).
+                        </p>
+                    </li>
+
+                    <li class="rounded-[10px] bg-secondary px-8 py-12">
+                        <img src="public/icons/customer.svg" alt="customer" class="inline h-6"/>
+                        <h3 class="inline font-bold text-2xl">Служба заботы</h3>
+                        <p class="mt-4 text-dimmed text-xl">
+                            Наша служба заботы готова решить практически любые вопросы и в режиме 24/7.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <h2 class="sr-only">Попробуйте бесплатно</h2>
+                <div class="card mb-16 pb-0 xl:pb-4 relative">
+                    <div class="xl:w-1/2">
+                        <p>Попробуйте бесплатно</p>
+                        <p class="mb-8">
+                            3-дневный пробный период с неограниченным доступом ко всем возможностям
                         </p>
 
                         <label class="label flex">
-                            <input type="email" placeholder="Введите ваш email" class="input" />
+                            <input type="email" placeholder="Введите ваш email" class="input"/>
+
                             <button class="btn btn-blue xl:btn-inline m-0 hidden flex-1 xl:inline-flex">
                                 Попробовать
                             </button>
@@ -81,456 +378,238 @@
 
                         <button class="btn btn-blue xl:hidden">Попробовать</button>
                     </div>
+
+                    <picture>
+                        <source srcset="public/images/webp/promo1.webp" type="image/webp">
+                        <img src="public/images/png/promo1.png" alt="promo"
+                             class="xl:inline xl:h-[120%] xl:absolute xl:bottom-0 xl:right-14"/>
+                    </picture>
                 </div>
-
-                <div class="bg-blur absolute right-[10rem] hidden xl:block"></div>
-                <div class="bg-[url('/public/images/boxes.webp')] bg-no-repeat w-1/2 min-h-full hidden xl:block"></div>
-            </div>
-        </section>
-
-        <section id="about">
-            <div class="card card-secondary mb-16 flex flex-col xl:flex-row xl:justify-between xl:gap-6">
-                <div class="w-full">
-                    <p class="text-accent text-8xl xl:card-bold">700</p>
-                    <p class="text-dimmed">
-                        Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов
-                    </p>
-                </div>
-
-                <div class="w-full">
-                    <p class="text-8xl text-accent xl:card-bold mt-8">5</p>
-                    <p class="text-dimmed">
-                        Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов
-                    </p>
-                </div>
-
-                <div class="w-full">
-                    <p class="text-8xl text-accent xl:card-bold mt-8">100 000</p>
-                    <p class="text-dimmed">
-                        Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="capabilities">
-            <h2 class="font-bold text-4xl">Возможности сервиса</h2>
-            <div class="xl:hidden mt-12">
-                <details class="details">
-                    <summary class="flex items-center justify-between rounded-[10px] bg-secondary p-8 font-bold text-secondary">
-                        Финансовая аналитика
-                    </summary>
-                    <div class="flex flex-col gap-y-8 rounded-b-[10px] bg-details p-8">
-                        <p class="font-bold">Инструменты для финансовой аналитики</p>
-                        <ul>
-                            <li class="mb-4 text-dimmed">
-                                Отчёт о прибылях и убытках (P&L)
-                            </li>
-                            <li class="mb-4 text-dimmed">
-                                Отчёт о движении денежных средств (ДДС)
-                            </li>
-                            <li class="mb-4 text-dimmed">Журнал операций</li>
-                            <li class="mb-4 text-dimmed">Сводка продаж</li>
-                            <li class="text-dimmed">Учёт самовыкупов</li>
-                        </ul>
-                        <img src="public/images/capabilities.webp" alt="отчёт" class="self-center" />
-                        <button class="btn btn-green">Попробовать бесплатно</button>
-                    </div>
-                </details>
-
-                <details class="details">
-                    <summary class="flex items-center justify-between rounded-[10px] bg-secondary p-8 font-bold text-secondary">
-                        Товарная аналитика
-                    </summary>
-                </details>
-
-                <details class="details">
-                    <summary class="flex items-center justify-between rounded-[10px] bg-secondary p-8 font-bold text-secondary">
-                        Аналитика внутренней рекламы
-                    </summary>
-                </details>
-
-                <details class="details">
-                    <summary class="flex items-center justify-between rounded-[10px] bg-secondary p-8 font-bold text-secondary">
-                        Статистика
-                    </summary>
-                </details>
-
-                <details class="details">
-                    <summary class="flex items-center justify-between rounded-[10px] bg-secondary p-8 font-bold text-secondary">
-                        Инструменты
-                    </summary>
-                </details>
-            </div>
-
-            <div class="shadow-radio radio-container mb-12 hidden xl:block">
-                <div class="flex flex-nowrap">
-                    <label class="radio-label">
-                        Финансовая аналитика
-                        <input type="radio" class="radio" name="radio" value="1" checked />
-                    </label>
-                    <label class="radio-label">
-                        Товарная аналитика
-                        <input type="radio" class="radio" name="radio" value="2" />
-                    </label>
-                    <label class="radio-label">
-                        Аналитика внутренней рекламы
-                        <input type="radio" class="radio" name="radio" value="3" />
-                    </label>
-                    <label class="radio-label">
-                        Статистика
-                        <input type="radio" class="radio" name="radio" value="4" />
-                    </label>
-                    <label class="radio-label">
-                        Инструменты
-                        <input type="radio" class="radio" name="radio" value="5" />
-                    </label>
-                </div>
-
-                <div class="radio-1 hidden w-full justify-between rounded-b-[10px] bg-details p-6">
-                    <div class="inline-block w-1/2">
-                        <p class="font-bold mb-5">Инструменты для финансовой аналитики</p>
-                        <ul>
-                            <li class="mb-4 text-dimmed">
-                                Отчёт о прибылях и убытках (P&L)
-                            </li>
-                            <li class="mb-4 text-dimmed">
-                                Отчёт о движении денежных средств (ДДС)
-                            </li>
-                            <li class="mb-4 text-dimmed">Журнал операций</li>
-                            <li class="mb-4 text-dimmed">Сводка продаж</li>
-                            <li class="text-dimmed">Учёт самовыкупов</li>
-                        </ul>
-                        <button class="btn btn-green btn-inline">
-                            Попробовать бесплатно
-                        </button>
-                    </div>
-                    <img src="public/images/capabilities.webp" alt="отчёт" class="inline w-[40%]" />
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="card mb-16 pb-0 xl:pb-4 relative">
-                <div class="xl:w-1/2 xl:inline-block">
-                    <p>Начните экономить своё время</p>
-                    <p class="mb-8">
-                        3-дневный пробный период с неограниченным доступом ко всем возможностям
-                    </p>
-                    <label class="label flex">
-                        <input type="email" placeholder="Введите ваш email" class="input" />
-
-                        <button class="btn btn-blue xl:btn-inline m-0 hidden flex-1 xl:inline-flex">
-                            Попробовать
-                        </button>
-                    </label>
-                    <button class="xl:hidden btn btn-blue">Попробовать</button>
-                </div>
-                <img src="public/images/time.webp" alt="time" class="xl:inline xl:h-[120%] xl:absolute xl:bottom-0 xl:right-8" />
-            </div>
-        </section>
-
-        <section>
-            <div class="flex flex-col items-center xl:flex-row mb-16">
-                <div class="mb-8 xl:mb-0 xl:mr-32">
-                    <h2>
-                        Собираем единые отчёты по всем вашим магазинам
-                    </h2>
-                    <p class="mb-8 text-dimmed text-2xl">С Mpassistant вы сможете:</p>
-                    <ul class="marker list-inside">
-                        <li class="mb-4 rounded-[10px] bg-secondary px-4 py-6 pl-14">
-                            Сможете видеть прибыль по всем магазинам и маркетплейсам в одном месте
-                        </li>
-                        <li class="mb-4 rounded-[10px] bg-secondary px-4 py-6 pl-14">
-                            Не потратите время на сбор данных из нескольких кабинетов или маркетплейсов
-                        </li>
-                        <li class="rounded-[10px] bg-secondary px-4 py-6 pl-14">
-                            Добавите любое количество магазинов
-                        </li>
-                    </ul>
-                </div>
-                <img src="public/images/promo.webp" alt="promo" class="block xl:hidden" />
-                <img src="public/images/promo_desktop.webp" alt="promo" class="hidden aspect-video h-1/2 w-full xl:block" />
-            </div>
-        </section>
-
-        <section>
-            <h2>Почему выбирают Mpassistant</h2>
-            <div class="mb-16 grid grid-cols-1 gap-4 xl:grid-cols-3">
-                <div class="rounded-[10px] bg-secondary px-8 py-12">
-                    <img src="public/icons/data.svg" alt="data" class="inline h-6" />
-                    <p class="inline font-bold text-2xl">Точность данных</p>
-                    <p class="mt-4 text-dimmed text-xl">
-                        Данные в отчётах сервиса полностью совпадает с данными ваших магазинов на маркетплейсах.
-                    </p>
-                </div>
-
-                <div class="rounded-[10px] bg-secondary px-8 py-12">
-                    <img src="public/icons/function.svg" alt="data" class="inline h-6" />
-                    <p class="inline font-bold text-2xl">Большой функционал</p>
-                    <p class="mt-4 text-dimmed text-xl">
-                        Полный набор инструментов для внутренней аналитики для Wildberries и Ozon. Более 10 полезных отчётов с удобными настраиваемыми фильтрами и параметрами.
-                    </p>
-                </div>
-
-                <div class="rounded-[10px] bg-secondary px-8 py-12">
-                    <img src="public/icons/easy.svg" alt="easy" class="inline h-6" />
-                    <p class="inline font-bold text-2xl">Лёгкость освоения</p>
-                    <p class="mt-4 text-dimmed text-xl">
-                        Наши отчёты просты и удобны. Все отчёты имеют подробные инструкции и видео, помогающие легко читать их и использовать.
-                    </p>
-                </div>
-
-                <div class="rounded-[10px] bg-secondary px-8 py-12">
-                    <img src="public/icons/experience.svg" alt="experience" class="inline h-6" />
-                    <p class="inline font-bold text-2xl">Подходит всем</p>
-                    <p class="mt-4 text-dimmed text-xl">
-                        Mpassistant создан селлерами для селлеров. Наш опыт в товарном бизнесе и разработке IT систем позволил создать полезный и удобный продукт, поэтому он подойдёт как для новичков, так и для опытных селлеров.
-                    </p>
-                </div>
-
-                <div class="rounded-[10px] bg-secondary px-8 py-12">
-                    <img src="public/icons/confidential.svg" alt="confidential" class="inline h-6" />
-                    <p class="inline font-bold text-2xl">Конфиденциальность</p>
-                    <p class="mt-4 text-dimmed text-xl">
-                        Ваша конфиденциальность для нас самый главный приоритет. Все ваши данные надёжно сохранены, а информация об этом записана в договоре-оферте. По желанию можем заключить дополнительное соглашение (NDA).
-                    </p>
-                </div>
-
-                <div class="rounded-[10px] bg-secondary px-8 py-12">
-                    <img src="public/icons/customer.svg" alt="customer" class="inline h-6" />
-                    <p class="inline font-bold text-2xl">Служба заботы</p>
-                    <p class="mt-4 text-dimmed text-xl">
-                        Наша служба заботы готова решить практически любые вопросы и в режиме 24/7.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="sr-only">Попробуйте бесплатно</h2>
-            <div class="card mb-16 pb-0 xl:pb-4 relative">
-                <div class="xl:w-1/2">
-                    <p>Попробуйте бесплатно</p>
-                    <p class="mb-8">
-                        3-дневный пробный период с неограниченным доступом ко всем возможностям
-                    </p>
-
-                    <label class="label flex">
-                        <input type="email" placeholder="Введите ваш email" class="input" />
-
-                        <button class="btn btn-blue xl:btn-inline m-0 hidden flex-1 xl:inline-flex">
-                            Попробовать
-                        </button>
-                    </label>
-
-                    <button class="btn btn-blue xl:hidden">Попробовать</button>
-                </div>
-
-                <img src="public/images/promo1.webp" alt="promo" class="xl:inline xl:h-[120%] xl:absolute xl:bottom-0 xl:right-14" />
             </div>
         </section>
 
         <section id="tariffs">
-            <h2>Выберите тариф</h2>
+            <div class="wrapper">
+                <h2>Выберите тариф</h2>
 
-            <ul class="overflow-hidden whitespace-nowrap">
-                <li class="btn btn-inline mr-2 bg-green">1 месяц</li>
-                <li class="btn btn-inline btn-bordered mr-2">3 месяца</li>
-                <li class="btn btn-inline btn-bordered">6 месяцев</li>
-            </ul>
+                <ul class="overflow-hidden whitespace-nowrap">
+                    <li class="btn btn-inline mr-2 bg-green">1 месяц</li>
+                    <li class="btn btn-inline btn-bordered mr-2">3 месяца</li>
+                    <li class="btn btn-inline btn-bordered">6 месяцев</li>
+                </ul>
 
-            <div class="grid grid-cols-1 xl:grid-cols-3 gap-2 xl:gap-y-12 xl:gap-x-8 xl:grid-container">
-                <div class="card card-secondary py-8 bg-white shadow-radio">
-                    <p class="m-0 font-bold">Стартовый</p>
-                    <p class="mb-auto text-2xl font-bold text-accent">4 990 ₽</p>
-
-                    <a href="#" class="btn btn-green">Попробовать</a>
-                    <button class="btn btn-bordered mb-0 border-green">
-                        Подробнее
-                        <img src="public/icons/arrowRight.svg" alt="arrow-right" class="inline" />
-                    </button>
-                </div>
-
-                <div class="card card-secondary relative py-8">
-                    <p class="m-0 font-bold">Стартовый +</p>
-                    <p class="mb-2 text-dimmed">4 491 ₽/мес</p>
-                    <p class="mb-6 text-2xl font-bold text-accent">13 473 ₽</p>
-
-                    <a href="#" class="btn btn-green">Попробовать</a>
-                    <button class="btn btn-bordered mb-0 border-green">
-                        Подробнее
-                        <img src="public/icons/arrowRight.svg" alt="arrow-right" class="inline" />
-                    </button>
-
-                    <div class="badge">— 10%</div>
-                </div>
-
-                <div class="card card-secondary relative bg-green-dimmed py-8">
-                    <p class="m-0 font-bold">Профи</p>
-                    <p class="mb-6 text-dimmed">4 241 ₽/мес</p>
-                    <p class="mb-12 text-2xl font-bold text-accent">25 446 ₽</p>
-
-                    <a href="#" class="btn btn-green">Попробовать</a>
-                    <button class="btn btn-bordered mb-0 border-green">
-                        Подробнее
-                        <img src="public/icons/arrowRight.svg" alt="arrow-right" class="inline" />
-                    </button>
-
-                    <div class="badge">— 10%</div>
-                </div>
-
-                <div class="card card-secondary bg-gradient-orange py-8 pb-0 xl:pb-4 relative z-[-2]">
-                    <div class="xl:w-1/3">
-                        <p class="m-0 font-bold">
-                            Начинающим селлерам с выручкой
-                        </p>
-                        <p class="mb-2 text-dimmed">до 200 000 ₽/мес</p>
-                        <p class="mb-6 text-2xl font-bold text-accent">Бесплатно</p>
+                <div class="grid grid-cols-1 xl:grid-cols-3 gap-2 xl:gap-y-12 xl:gap-x-8 xl:grid-container">
+                    <div class="card card-secondary py-8 bg-white shadow-radio">
+                        <h3 class="m-0 font-bold">Стартовый</h3>
+                        <p class="mb-auto text-2xl font-bold text-accent">4 990 ₽</p>
 
                         <a href="#" class="btn btn-green">Попробовать</a>
                         <button class="btn btn-bordered mb-0 border-green">
                             Подробнее
-                            <img src="public/icons/arrowRight.svg" alt="arrow-right" class="inline" />
+                            <img src="public/icons/arrowRight.svg" alt="arrow-right" class="inline"/>
                         </button>
                     </div>
-                    <img src="public/images/free.webp" alt="free" class="xl:hidden" />
-                    <img src="public/images/free_desktop.webp" alt="free" class="xl:block h-[130%] absolute bottom-0 right-14 z-[-1]" />
 
+                    <div class="card card-secondary relative py-8">
+                        <h3 class="m-0 font-bold">Стартовый +</h3>
+                        <p class="mb-2 text-dimmed">4 491 ₽/мес</p>
+                        <p class="mb-6 text-2xl font-bold text-accent">13 473 ₽</p>
+
+                        <a href="#" class="btn btn-green">Попробовать</a>
+                        <button class="btn btn-bordered mb-0 border-green">
+                            Подробнее
+                            <img src="public/icons/arrowRight.svg" alt="arrow-right" class="inline"/>
+                        </button>
+
+                        <div class="badge">— 10%</div>
+                    </div>
+
+                    <div class="card card-secondary relative bg-green-dimmed py-8">
+                        <h3 class="m-0 font-bold">Профи</h3>
+                        <p class="mb-6 text-dimmed">4 241 ₽/мес</p>
+                        <p class="mb-12 text-2xl font-bold text-accent">25 446 ₽</p>
+
+                        <a href="#" class="btn btn-green">Попробовать</a>
+                        <button class="btn btn-bordered mb-0 border-green">
+                            Подробнее
+                            <img src="public/icons/arrowRight.svg" alt="arrow-right" class="inline"/>
+                        </button>
+
+                        <div class="badge">— 10%</div>
+                    </div>
+
+                    <div class="card card-secondary bg-gradient-orange py-8 pb-0 xl:pb-4 relative z-[-2]">
+                        <div class="xl:w-1/3">
+                            <h3 class="m-0 font-bold">
+                                Начинающим селлерам с выручкой
+                            </h3>
+                            <p class="mb-2 text-dimmed">до 200 000 ₽/мес</p>
+                            <p class="mb-6 text-2xl font-bold text-accent">Бесплатно</p>
+
+                            <a href="#" class="btn btn-green">Попробовать</a>
+                            <button class="btn btn-bordered mb-0 border-green">
+                                Подробнее
+                                <img src="public/icons/arrowRight.svg" alt="arrow-right" class="inline"/>
+                            </button>
+                        </div>
+                        <picture>
+                            <source srcset="public/images/webp/free.webp" type="image/webp">
+                            <img src="public/images/png/free.png" alt="" class="xl:hidden"/>
+                        </picture>
+
+                        <picture>
+                            <source srcset="public/images/webp/free_desktop.webp" type="image/webp">
+                            <img src="public/images/png/free_desktop.png" alt=""
+                                 class="xl:block h-[130%] absolute bottom-0 right-14 z-[-1]"/>
+                        </picture>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="flex justify-between items-center my-8">
-                <h2>Отзывы</h2>
-                <div class="hidden xl:block">
-                    <button><img src="public/icons/arrowGradient.svg" alt="back" class="rotate-180 mr-4" /></button>
-                    <button><img src="public/icons/arrowGradient.svg" alt="next" /></button>
-                </div>
-            </div>
-
-            <div class="flex justify-between xl:gap-8">
-                <div class="relative mb-4 rounded-[10px] bg-secondary px-4 py-8 flex-1">
-                    <p class="text-dimmed">
-                        Изначально нашёл сервис в поиске Яндекса, когда искал калькулятор unit-экономики товара. Калькулятор полностью устроил и решил пользоваться самим сайтом. К тому же это было для меня бесплатно, так как проходил по условиям
-                        бесплатного доступа: оборот до 200т.р в месяц. Этого не встретить на других сайтах, это возможность развиваться на ранних этапах, без вложения огромных сумм для доступа к подобным сайтам. Радует поддержка, получал ответы на
-                        все вопросы, выслушивали
-                    </p>
-
-                    <button class="relative z-10 mb-6 text-xl font-bold text-secondary">
-                        Читать полностью
-                        <img src="public/icons/arrowDown.svg" alt="arrowDown" class="inline" />
-                    </button>
-
-                    <p class="relative z-10 text-xl font-bold">— Алексей</p>
-
-                    <div class="absolute bottom-0 z-[0] h-3/4 w-full bg-gradient-dimmed"></div>
+            <div class="wrapper">
+                <div class="flex justify-between items-center my-8">
+                    <h2>Отзывы</h2>
+                    <div class="hidden xl:block">
+                        <span class="sr-only">Назад</span>
+                        <button><img src="public/icons/arrowGradient.svg" alt="back" class="rotate-180 mr-4"/></button>
+                        <span class="sr-only">Вперёд</span>
+                        <button><img src="public/icons/arrowGradient.svg" alt="next"/></button>
+                    </div>
                 </div>
 
-                <div class="hidden xl:flex flex-col relative mb-4 rounded-[10px] bg-secondary px-4 py-8 flex-1">
-                    <p class="text-dimmed">
-                        Функционал сервиса, тот что есть — полностью устраивает. Хочется ещё автобиддер по ставкам в рекламных компаниях и цены вам не будет!
-                    </p>
+                <div class="flex justify-between xl:gap-8">
+                    <div class="relative mb-4 rounded-[10px] bg-secondary px-4 py-8 flex-1">
+                        <p class="text-dimmed">
+                            Изначально нашёл сервис в поиске Яндекса, когда искал калькулятор unit-экономики товара.
+                            Калькулятор полностью устроил и решил пользоваться самим сайтом. К тому же это было для меня
+                            бесплатно, так как проходил по условиям
+                            бесплатного доступа: оборот до 200т.р в месяц. Этого не встретить на других сайтах, это
+                            возможность развиваться на ранних этапах, без вложения огромных сумм для доступа к подобным
+                            сайтам. Радует поддержка, получал ответы на
+                            все вопросы, выслушивали
+                        </p>
 
-                    <p class="relative z-10 text-xl font-bold mt-auto">— Владислав</p>
+                        <button class="relative z-10 mb-6 text-xl font-bold text-secondary">
+                            Читать полностью
+                            <img src="public/icons/arrowDown.svg" alt="arrowDown" class="inline"/>
+                        </button>
+
+                        <p class="relative z-10 text-xl font-bold">— Алексей</p>
+
+                        <div class="absolute bottom-0 z-[0] h-3/4 w-full bg-gradient-dimmed"></div>
+                    </div>
+
+                    <div class="hidden xl:flex flex-col relative mb-4 rounded-[10px] bg-secondary px-4 py-8 flex-1">
+                        <p class="text-dimmed">
+                            Функционал сервиса, тот что есть — полностью устраивает. Хочется ещё автобиддер по ставкам в
+                            рекламных компаниях и цены вам не будет!
+                        </p>
+
+                        <p class="relative z-10 text-xl font-bold mt-auto">— Владислав</p>
+                    </div>
                 </div>
-            </div>
-            <div class="xl:hidden">
-                <ul class="flex w-full flex-row justify-center gap-2">
-                    <li><img src="public/icons/circleSelected.svg" alt="circle" /></li>
-                    <li class="cursor-pointer">
-                        <img src="public/icons/circle.svg" alt="circle" />
-                    </li>
-                    <li class="cursor-pointer">
-                        <img src="public/icons/circle.svg" alt="circle" />
-                    </li>
-                    <li class="cursor-pointer">
-                        <img src="public/icons/circle.svg" alt="circle" />
-                    </li>
-                </ul>
+                <div class="xl:hidden">
+                    <ul class="flex w-full flex-row justify-center gap-2">
+                        <li><img src="public/icons/circleSelected.svg" alt="circle"/></li>
+                        <li class="cursor-pointer">
+                            <img src="public/icons/circle.svg" alt="circle"/>
+                        </li>
+                        <li class="cursor-pointer">
+                            <img src="public/icons/circle.svg" alt="circle"/>
+                        </li>
+                        <li class="cursor-pointer">
+                            <img src="public/icons/circle.svg" alt="circle"/>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </div>
 </main>
 
 <footer class="mt-8 bg-secondary px-4 pb-16 pt-4 xl:px-[4rem] xl:pt-12">
-    <div class="xl:flex">
-        <div class="h-full">
-            <img src="public/icons/logo.svg" alt="logo" class="mb-4" />
-            <p class="text-dimmed">
-                Аналитика и оцифровка продаж
-                <span class="text-purple font-bold">Wildberries</span> и
-                <span class="text-accent font-bold">Ozon</span>
-            </p>
+    <div class="wrapper">
+        <div class="xl:flex">
+            <div class="h-full">
+                <img src="public/icons/logo.svg" alt="logo" class="mb-4"/>
+                <p class="text-dimmed">
+                    Аналитика и оцифровка продаж
+                    <span class="text-purple font-bold">Wildberries</span> и
+                    <span class="text-accent font-bold">Ozon</span>
+                </p>
 
-            <div class="my-8 flex items-center gap-2">
-                <a href="#"><img src="public/icons/vk.svg" alt="vk" /></a>
-                <a href="#"><img src="public/icons/telegram.svg" alt="telegram" /></a>
-                <a href="#"><img src="public/icons/youtube.svg" alt="youtube" /></a>
+                <div class="my-8 flex items-center gap-2">
+                    <a href="#"><span class="sr-only">Перейти в наш VK</span><img src="public/icons/vk.svg"
+                                                                                  alt="vk"/></a>
+                    <a href="#"><span class="sr-only">Перейти в наш телеграм</span><img src="public/icons/telegram.svg"
+                                                                                        alt="telegram"/></a>
+                    <a href="#"><span class="sr-only">Перейти на наш ютуб</span><img src="public/icons/youtube.svg"
+                                                                                     alt="youtube"/></a>
+                </div>
+
+                <p class="hidden xl:block mb-6 mt-10 text-dimmed">© 2022–2023 Mpassistant</p>
+                <p class="hidden xl:block mb-6 text-dimmed">
+                    Информация, размещённая на сайте, не является публичной офертой
+                </p>
             </div>
 
-            <p class="hidden xl:block mb-6 mt-10 text-dimmed">© 2022–2023 Mpassistant</p>
-            <p class="hidden xl:block mb-6 text-dimmed">
-                Информация, размещённая на сайте, не является публичной офертой
+            <div class="grid grid-cols-2 gap-x-5 gap-y-10 xl:grid-cols-4">
+                <div class="flex flex-col gap-6">
+                    <p class="font-bold">Сервис</p>
+                    <a href="#" class="text-dimmed link">Для кого</a>
+                    <a href="#" class="text-dimmed link">Возможности</a>
+                    <a href="#" class="text-dimmed link">Тарифы</a>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <p class="font-bold">Клиентам</p>
+                    <a href="#" class="text-dimmed link">Вход</a>
+                    <a href="#" class="text-dimmed link">Регистрация</a>
+                    <a href="#" class="text-dimmed link">Восстановление пароля</a>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <p class="font-bold">Документы</p>
+                    <a href="#" class="text-dimmed link">Пользовательское соглашение</a>
+                    <a href="#" class="text-dimmed link">Политика конфидециальности</a>
+                    <a href="#" class="text-dimmed link">Публичная оферта</a>
+                    <a href="#" class="text-dimmed link">Использование cookie</a>
+                    <a href="#" class="text-dimmed link">Техническая поддержка</a>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <p class="font-bold">Ссылки</p>
+                    <a href="grid.html" class="text-dimmed link">Grid</a>
+                    <a href="form.html" class="text-dimmed link">Form</a>
+                    <a href="demo.html" class="text-dimmed link">Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="xl:ml-auto xl:w-fit w-1/2 mt-8">
+            <img src="public/icons/modulbank.svg" alt="модуль банк" class="inline-block"/>
+            <img src="public/icons/visa.svg" alt="visa" class="inline-block"/>
+            <img src="public/icons/mastercard.svg" alt="mastercard" class="inline-block"/>
+            <img src="public/icons/maestro.svg" alt="maestro" class="inline-block"/>
+            <img src="public/icons/mir.svg" alt="mir" class="inline-block"/>
+
+            <p class="text-dimmed mt-8 hidden xl:block">
+                Редизайн сайта
+                <a href="#" class="font-bold text-secondary">Turkuletsdesign</a>
             </p>
         </div>
 
-        <div class="grid grid-cols-2 gap-x-5 gap-y-10 xl:grid-cols-4">
-            <div class="flex flex-col gap-6">
-                <p class="font-bold">Сервис</p>
-                <a href="#" class="text-dimmed link">Для кого</a>
-                <a href="#" class="text-dimmed link">Возможности</a>
-                <a href="#" class="text-dimmed link">Тарифы</a>
-            </div>
+        <p class="mb-6 mt-10 text-dimmed xl:hidden">© 2022–2023 Mpassistant</p>
+        <p class="mb-6 text-dimmed xl:hidden">
+            Информация, размещённая на сайте, не является публичной офертой
+        </p>
 
-            <div class="flex flex-col gap-6">
-                <p class="font-bold">Клиентам</p>
-                <a href="#" class="text-dimmed link">Вход</a>
-                <a href="#" class="text-dimmed link">Регистрация</a>
-                <a href="#" class="text-dimmed link">Восстановление пароля</a>
-            </div>
-
-            <div class="flex flex-col gap-6">
-                <p class="font-bold">Документы</p>
-                <a href="#" class="text-dimmed link">Пользовательское соглашение</a>
-                <a href="#" class="text-dimmed link">Политика конфидециальности</a>
-                <a href="#" class="text-dimmed link">Публичная оферта</a>
-                <a href="#" class="text-dimmed link">Использование cookie</a>
-                <a href="#" class="text-dimmed link">Техническая поддержка</a>
-            </div>
-
-            <div class="flex flex-col gap-6">
-                <p class="font-bold">Ссылки</p>
-                <a href="grid.html" class="text-dimmed link">Grid</a>
-                <a href="form.html" class="text-dimmed link">Form</a>
-                <a href="demo.html" class="text-dimmed link">Demo</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="xl:ml-auto xl:w-fit w-1/2 mt-8">
-        <img src="public/icons/modulbank.svg" alt="модуль банк" class="inline-block" />
-        <img src="public/icons/visa.svg" alt="visa" class="inline-block" />
-        <img src="public/icons/mastercard.svg" alt="mastercard" class="inline-block" />
-        <img src="public/icons/maestro.svg" alt="maestro" class="inline-block" />
-        <img src="public/icons/mir.svg" alt="mir" class="inline-block" />
-
-        <p class="text-dimmed mt-8 hidden xl:block">
+        <p class="text-dimmed xl:hidden">
             Редизайн сайта
             <a href="#" class="font-bold text-secondary">Turkuletsdesign</a>
-        </p>
-    </div>
-
-    <p class="mb-6 mt-10 text-dimmed xl:hidden">© 2022–2023 Mpassistant</p>
-    <p class="mb-6 text-dimmed xl:hidden">
-        Информация, размещённая на сайте, не является публичной офертой
-    </p>
-
-    <p class="text-dimmed xl:hidden">
-        Редизайн сайта
-        <a href="#" class="font-bold text-secondary">Turkuletsdesign</a>
-    </p>
+        </p></div>
 </footer>
 </body>
 </html>

@@ -473,6 +473,13 @@ video {
   }
 }
 
+.wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1920px;
+}
+
 .link:hover {
   --tw-text-opacity: 1;
   color: rgb(42 132 238 / var(--tw-text-opacity));
@@ -965,6 +972,11 @@ footer {
   margin: 0px;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -973,11 +985,6 @@ footer {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mb-0 {
@@ -1036,6 +1043,10 @@ footer {
   margin-right: 2rem;
 }
 
+.mr-\[15rem\] {
+  margin-right: 15rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -1054,14 +1065,6 @@ footer {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mr-\[5rem\] {
-  margin-right: 5rem;
-}
-
-.mr-\[15rem\] {
-  margin-right: 15rem;
 }
 
 .block {
@@ -1198,6 +1201,10 @@ footer {
   justify-content: space-between;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1284,6 +1291,14 @@ footer {
 
 .bg-gradient-orange {
   background-image: linear-gradient(91deg, #FFF1D7 5.69%, #FFB57F 125.81%);
+}
+
+.bg-\[url\(\'\/public\/images\/webp\/boxes\.webp\'\)\] {
+  background-image: url('/public/images/webp/boxes.webp');
+}
+
+.bg-\[url\(\'\/public\/images\/png\/boxes\.png\'\)\] {
+  background-image: url('/public/images/png/boxes.png');
 }
 
 .bg-no-repeat {
@@ -1450,7 +1465,18 @@ footer {
   .xl\:grid-container div:last-child {
     grid-column: 1/4;
   }
+}
 
+.first-letter\:font-bold::first-letter {
+  font-weight: 700;
+}
+
+.first-letter\:text-accent::first-letter {
+  --tw-text-opacity: 1;
+  color: rgb(42 132 238 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1280px) {
   .xl\:absolute {
     position: absolute;
   }
