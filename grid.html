@@ -9,48 +9,46 @@
     <link rel="stylesheet" href="grid.css"/>
 </head>
 <body>
-<header
-        class="flex w-full items-center justify-between px-4 pt-4  lg:px-[4rem]  lg:pt-6">
+<header class="flex w-full items-center justify-between px-8 pt-8 xl:px-16 xl:pt-6">
     <div class="flex w-fit">
-        <img alt="logo" src="public/icons/logo.svg" class="inline  lg:mr-6"/>
-        <p class="hidden text-[0.6rem] text-dimmed  lg:block">
-            Аналитика и оцифровка продаж <br/>
-            <span class="font-bold text-purple">Wildberries</span> и
-            <span class="font-bold text-accent">Ozon</span>
+        <img alt="logo" src="public/icons/logo.svg" class="inline xl:mr-6"/>
+        <p class="hidden text-dimmed text-sm xl:block">
+            Аналитика и оцифровка продаж
+            <span class="text-purple">Wildberries</span> и
+            <span class="text-accent">Ozon</span>
         </p>
     </div>
 
     <nav class="w-fit">
-        <ul class=" lg:hidden">
+        <ul class="xl:hidden">
             <li class="mr-8 inline">
-                <a href="#"
-                ><img src="public/icons/login.svg" alt="login" class="inline"
-                /></a>
+                <span class="sr-only">Вход</span>
+                <a href="#"><img src="public/icons/login.svg" alt="login" class="inline"/></a>
             </li>
             <li class="inline">
                 <button>
+                    <span class="sr-only">Меню</span>
                     <img src="public/icons/menu.svg" alt="menu" class="inline"/>
                 </button>
             </li>
         </ul>
 
-        <ul class="hidden whitespace-nowrap text-sm  lg:block">
+        <ul class="hidden whitespace-nowrap text-sm xl:block">
             <li class="mr-6 inline">
-                <a href="#about">О нас</a>
+                <a href="#" class="link">О нас</a>
             </li>
             <li class="mr-6 inline">
-                <a href="#capabilities">Возможности</a>
+                <a href="#" class="link">Возможности</a>
             </li>
             <li class="inline">
-                <a href="#tariffs">Тарифы</a>
+                <a href="#" class="link">Тарифы</a>
             </li>
         </ul>
     </nav>
 
-    <div class="hidden text-sm  lg:block">
-        <a class="btn btn-inline my-0 gap-2 font-bold text-black"
-        ><img src="public/icons/login.svg" alt="login" class="inline"/> Вход
-        </a>
+    <div class="hidden text-sm xl:block">
+        <a class="btn btn-inline my-0 gap-2 font-bold text-black link"><img src="public/icons/login.svg" alt="login"/>
+            Вход </a>
 
         <a class="btn btn-inline btn-green my-0">Зарегистрироваться</a>
     </div>
@@ -58,22 +56,69 @@
 
 <main>
     <section>
-        <div class="grid-container">
-            <div id="1"></div>
-            <div id="2"></div>
-            <div id="3"></div>
-            <div id="4"></div>
-            <div id="5"></div>
-            <div id="6"></div>
-            <div id="7"></div>
-            <div id="8"></div>
-            <div id="9"></div>
+        <div class="grid-container mb-4">
+            <div id="cell-1"></div>
+            <div id="cell-2"></div>
+            <div id="cell-3"></div>
+            <div id="cell-4"></div>
+            <div id="cell-5"></div>
+            <div id="cell-6"></div>
+            <div id="cell-7"></div>
+            <div id="cell-8"></div>
+            <div id="cell-9"></div>
+            <div id="cell-10"></div>
+            <div id="cell-11"></div>
+            <div id="cell-12"></div>
+            <div id="cell-13"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid grid-graphics mb-4">
+            <ul id="graph-sidebar" class="flex flex-col justify-center">
+                <li>
+                    <a href="#">Link-1</a>
+                </li>
+                <li>
+                    <a href="#">Link-2</a>
+                </li>
+                <li>
+                    <a href="#">Link-3</a>
+                </li>
+                <li>
+                    <a href="#">Link-4</a>
+                </li>
+                <li>
+                    <a href="#">Link-5</a>
+                </li>
+                <li>
+                    <a href="#">Link-6</a>
+                </li>
+            </ul>
+            <div id="graphs-1"><img src="public/images/graphs/first.svg" alt="graph"></div>
+            <div id="graphs-2"><img src="public/images/graphs/second.svg" alt="graph"></div>
+            <div id="graphs-3"><img src="public/images/graphs/third.svg" alt="graph"></div>
+            <div id="graphs-4"><img src="public/images/graphs/fourth.svg" alt="graph"></div>
+            <div id="graphs-5"><img src="public/images/graphs/fifth.svg" alt="graph"></div>
+            <div id="graphs-6"><img src="public/images/graphs/sixth.svg" alt="graph"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid grid-pictures">
+            <div><img src="public/images/rickroll.webp" alt="rickroll"><a href="#">Link</a></div>
+            <div><img src="public/images/rickroll.webp" alt="rickroll"><a href="#">Link</a></div>
+            <div><img src="public/images/rickroll.webp" alt="rickroll"><a href="#">Link</a></div>
+            <div><img src="public/images/rickroll.webp" alt="rickroll"><a href="#">Link</a></div>
+            <div><img src="public/images/rickroll.webp" alt="rickroll"><a href="#">Link</a></div>
+            <div><img src="public/images/rickroll.webp" alt="rickroll"><a href="#">Link</a></div>
+            <div><img src="public/images/rickroll.webp" alt="rickroll"><a href="#">Link</a></div>
         </div>
     </section>
 </main>
 
-<footer class="mt-8 bg-secondary px-4 pb-16 pt-4 lg:px-[4rem]  lg:pt-12">
-    <div class="lg:flex">
+<footer class="mt-8 bg-secondary px-4 pb-16 pt-4 xl:px-[4rem] xl:pt-12">
+    <div class="xl:flex">
         <div class="h-full">
             <img src="public/icons/logo.svg" alt="logo" class="mb-4"/>
             <p class="text-dimmed">
@@ -88,68 +133,63 @@
                 <a href="#"><img src="public/icons/youtube.svg" alt="youtube"/></a>
             </div>
 
-            <p class="hidden lg:block mb-6 mt-10 text-dimmed">© 2022–2023 Mpassistant</p>
-            <p class="hidden lg:block mb-6 text-dimmed">
+            <p class="hidden xl:block mb-6 mt-10 text-dimmed">© 2022–2023 Mpassistant</p>
+            <p class="hidden xl:block mb-6 text-dimmed">
                 Информация, размещённая на сайте, не является публичной офертой
             </p>
         </div>
 
-        <div class="grid grid-cols-2 gap-x-5 gap-y-10  lg:grid-cols-4 ">
+        <div class="grid grid-cols-2 gap-x-5 gap-y-10 xl:grid-cols-4">
             <div class="flex flex-col gap-6">
-                <h3 class="font-bold">Сервис</h3>
-                <a href="#" class="text-dimmed">Для кого</a>
-                <a href="#" class="text-dimmed">Возможности</a>
-                <a href="#" class="text-dimmed">Тарифы</a>
+                <p class="font-bold">Сервис</p>
+                <a href="#" class="text-dimmed link">Для кого</a>
+                <a href="#" class="text-dimmed link">Возможности</a>
+                <a href="#" class="text-dimmed link">Тарифы</a>
             </div>
 
             <div class="flex flex-col gap-6">
-                <h3 class="font-bold">Клиентам</h3>
-                <a href="#" class="text-dimmed">Вход</a>
-                <a href="#" class="text-dimmed">Регистрация</a>
-                <a href="#" class="text-dimmed">Восстановление пароля</a>
+                <p class="font-bold">Клиентам</p>
+                <a href="#" class="text-dimmed link">Вход</a>
+                <a href="#" class="text-dimmed link">Регистрация</a>
+                <a href="#" class="text-dimmed link">Восстановление пароля</a>
             </div>
 
             <div class="flex flex-col gap-6">
-                <h3 class="font-bold">Документы</h3>
-                <a href="#" class="text-dimmed">Пользовательское соглашение</a>
-                <a href="#" class="text-dimmed">Политика конфидециальности</a>
-                <a href="#" class="text-dimmed">Публичная оферта</a>
-                <a href="#" class="text-dimmed">Использование cookie</a>
-                <a href="#" class="text-dimmed">Техническая поддержка</a>
+                <p class="font-bold">Документы</p>
+                <a href="#" class="text-dimmed link">Пользовательское соглашение</a>
+                <a href="#" class="text-dimmed link">Политика конфидециальности</a>
+                <a href="#" class="text-dimmed link">Публичная оферта</a>
+                <a href="#" class="text-dimmed link">Использование cookie</a>
+                <a href="#" class="text-dimmed link">Техническая поддержка</a>
             </div>
 
             <div class="flex flex-col gap-6">
-                <h3 class="font-bold">Ссылки</h3>
-                <a href="grid.html" class="text-dimmed">Grid</a>
+                <p class="font-bold">Ссылки</p>
+                <a href="grid.html" class="text-dimmed link">Grid</a>
+                <a href="form.html" class="text-dimmed link">Form</a>
             </div>
         </div>
     </div>
 
-    <div class="lg:ml-auto lg:w-fit w-1/2 mt-8">
-        <img
-                src="public/icons/modulbank.svg"
-                alt="модуль банк"
-                class="inline-block"/>
+    <div class="xl:ml-auto xl:w-fit w-1/2 mt-8">
+        <img src="public/icons/modulbank.svg" alt="модуль банк" class="inline-block"/>
         <img src="public/icons/visa.svg" alt="visa" class="inline-block"/>
-        <img
-                src="public/icons/mastercard.svg"
-                alt="mastercard"
-                class="inline-block"/>
+        <img src="public/icons/mastercard.svg" alt="mastercard" class="inline-block"/>
         <img src="public/icons/maestro.svg" alt="maestro" class="inline-block"/>
         <img src="public/icons/mir.svg" alt="mir" class="inline-block"/>
 
-        <p class="text-dimmed mt-8 sm:hidden lg:block">
+        <p class="text-dimmed mt-8 hidden xl:block">
             Редизайн сайта
             <a href="#" class="font-bold text-secondary">Turkuletsdesign</a>
         </p>
     </div>
 
-    <p class="mb-6 mt-10 text-dimmed lg:hidden">© 2022–2023 Mpassistant</p>
-    <p class="mb-6 text-dimmed lg:hidden">
+    <p class="mb-6 mt-10 text-dimmed xl:hidden">© 2022–2023 Mpassistant</p>
+    <p class="mb-6 text-dimmed xl:hidden">
         Информация, размещённая на сайте, не является публичной офертой
     </p>
 
-    <p class="text-dimmed">
+    <p class="text-dimmed xl:hidden">
         Редизайн сайта
         <a href="#" class="font-bold text-secondary">Turkuletsdesign</a>
     </p>
