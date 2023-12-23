@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html'],
+  content: ['./*.html'],
   theme: {
     colors: {
       white: '#ffffff',
@@ -12,6 +12,7 @@ module.exports = {
       'orange-dimmed': '#fff1d7',
       purple: '#702a8a',
       placeholder: '#c3c3c3',
+      grey: '#333333',
     },
     borderColor: {
       green: '#2eb897',
