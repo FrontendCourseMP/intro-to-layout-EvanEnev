@@ -820,6 +820,21 @@ footer {
   border: 1px dotted black;
 }
 
+.skip-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  color: #212121;
+  background: #2eb897;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(20%);
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -970,10 +985,6 @@ footer {
 
 .col-span-full {
   grid-column: 1 / -1;
-}
-
-.col-end-3 {
-  grid-column-end: 3;
 }
 
 .m-0 {
